@@ -8,7 +8,7 @@ CREATE TABLE users (
   id INT(11) NOT NULL,
   username VARCHAR(16) NOT NULL,
   password VARCHAR(60) NOT NULL,
-  fullname VARCHAR(100) NOT NULL
+  lname VARCHAR(100) NOT NULL
 );
 
 ALTER TABLE users
@@ -19,7 +19,7 @@ ALTER TABLE users
 
 DESCRIBE users;
 
-INSERT INTO users (id, username, password, fullname) 
+INSERT INTO users (id, username, password, fname) 
   VALUES (1, 'john', 'password1', 'John Carter');
 
 SELECT * FROM users;
