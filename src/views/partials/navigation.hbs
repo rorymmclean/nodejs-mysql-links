@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         {{#if user}}
-        <li class="nav-item dropdown">
+<!--        <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
           Tests
@@ -21,18 +21,19 @@
             <a class="dropdown-item" href="/links/add">Add A Patient</a>
           </div>
         </li>
+-->        
         <li class="nav-item">
           <a class="nav-link" href="/profile">Profile</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/logout">Logout</a>
+          <a class="nav-link" href="/logout">Log Out</a>
         </li>
         {{else}}
         <li class="nav-item">
-          <a class="nav-link" href="/signin">SignIn</a>
+          <a class="nav-link" href="/signin">Log In</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/signup">SignUp</a>
+          <a class="nav-link" href="/signup">Sign Up</a>
         </li>
         {{/if}}
       </ul>
