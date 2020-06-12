@@ -2,11 +2,11 @@ const linksCtrl = {};
 
 const pool = require('../database');
 
-linksCtrl.renderAddLink = (req, res) => {
-    res.render('links/printpatient', { title: 'my other page', layout: 'print' });
+linksCtrl.renderPatient = (req, res) => {
+    res.render('links/add');
 };
 
-linksCtrl.addLink = async (req, res) => {
+linksCtrl.addPatient = async (req, res) => {
     const { title, url, description } = req.body;
     const newLink = {
         title,
@@ -19,19 +19,19 @@ linksCtrl.addLink = async (req, res) => {
     res.redirect('/links');
 }
 
-linksCtrl.renderLinks = async (req, res) => {
+linksCtrl.renderTestPatient = async (req, res) => {
     const links = await pool.query('SELECT * FROM links WHERE user_id = ?', [req.user.id]);
     res.render('links/list', { links });
 }
 
-linksCtrl.deleteLink = async (req, res) => {
+linksCtrl.editPatient = async (req, res) => {
     const { id } = req.params;
     await pool.query('DELETE FROM links WHERE ID = ?', [id]);
     req.flash('success', 'Link Removed Successfully');
     res.redirect('/links');
 };
 
-linksCtrl.renderEditLink = async (req, res) => {
+linksCtrl.printpatient = async (req, res) => {
     const { id } = req.params;
     const links = await pool.query('SELECT * FROM links WHERE id = ?', [id]);
     console.log(links);

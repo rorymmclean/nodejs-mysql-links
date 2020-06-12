@@ -32,6 +32,16 @@ font-family: 'Oswald', sans-serif;
     background-size: cover;
 }
 
+.encprint {
+  width: 8.5in;
+  height: 11in;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  background: url('/img/covid_form_trimmed.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .masthead h1 {
     font-size: 4rem;
     margin: 0;
@@ -46,3 +56,282 @@ font-family: 'Oswald', sans-serif;
       font-size: 5.5rem;
     }
   }
+ 
+.form_authorization_code {
+    color: darkblue;
+    position: fixed;
+    left: 130px;
+    top: 73px;
+    }
+.form_outbreak {
+    color: darkblue;
+    position: fixed;
+    left: 670px;
+    top: 107px;
+    }
+
+.form_submitter {
+    color: darkblue;
+    position: absolute;
+    left: 210px;
+    top: 145px;
+    }
+
+.form_sub_address {
+  color: darkblue;
+  position: absolute;
+  left: 50px;
+  top: 180px;
+  }
+.form_sub_city {
+  color: darkblue;
+  position: absolute;
+  left: 420px;
+  top: 180px;
+  }
+.form_sub_state {
+  color: darkblue;
+  position: absolute;
+  left: 670px;
+  top: 180px;
+  }
+.form_sub_zip {
+  color: darkblue;
+  position: absolute;
+  left: 740px;
+  top: 180px;
+}
+
+.form_sub_contact {
+  color: darkblue;
+  position: absolute;
+  left: 50px;
+  top: 220px;
+}
+.form_sub_phone {
+  color: darkblue;
+  position: absolute;
+  left: 260px;
+  top: 220px;
+}
+.form_sub_fax {
+  color: darkblue;
+  position: absolute;
+  left: 420px;
+  top: 220px;
+}
+.form_sub_email {
+  color: darkblue;
+  position: absolute;
+  left: 600px;
+  top: 220px;
+}
+
+.form_pat_lname {
+  color: darkblue;
+  position: absolute;
+  left: 50px;
+  top: 295px;
+}
+.form_pat_fname {
+  color: darkblue;
+  position: absolute;
+  left: 390px;
+  top: 295px;
+}
+.form_pat_mname {
+  color: darkblue;
+  position: absolute;
+  left: 620px;
+  top: 295px;
+}
+
+.form_pat_street {
+  color: darkblue;
+  position: absolute;
+  left: 50px;
+  top: 335px;
+}
+.form_pat_apart {
+  color: darkblue;
+  position: absolute;
+  left: 620px;
+  top: 335px;
+}
+
+.form_pat_city {
+  color: darkblue;
+  position: absolute;
+  left: 50px;
+  top: 375px;
+}
+.form_pat_state {
+  color: darkblue;
+  position: absolute;
+  left: 550px;
+  top: 375px;
+}
+.form_pat_zip {
+  color: darkblue;
+  position: absolute;
+  left: 720px;
+  top: 375px;
+}
+
+.form_pat_phone {
+  color: darkblue;
+  position: absolute;
+  left: 50px;
+  top: 415px;
+}
+.form_pat_dob {
+  color: darkblue;
+  position: absolute;
+  left: 350px;
+  top: 415px;
+}
+.form_pat_age {
+  color: darkblue;
+  position: absolute;
+  left: 550px;
+  top: 415px;
+}
+
+.form_pat_male {
+  color: darkblue;
+  position: absolute;
+  left: 14px;
+  top: 485px;
+}
+.form_pat_female {
+  color: darkblue;
+  position: absolute;
+  left: 14px;
+  top: 502px;
+}
+
+.form_pat_race1 {
+  color: darkblue;
+  position: absolute;
+  left: 154px;
+  top: 485px;
+}
+.form_pat_race2 {
+  color: darkblue;
+  position: absolute;
+  left: 154px;
+  top: 502px;
+}
+.form_pat_race3 {
+  color: darkblue;
+  position: absolute;
+  left: 332px;
+  top: 485px;
+}
+.form_pat_race4 {
+  color: darkblue;
+  position: absolute;
+  left: 332px;
+  top: 502px;
+}
+.form_pat_race5 {
+  color: darkblue;
+  position: absolute;
+  left: 498px;
+  top: 485px;
+}
+
+.form_pat_ethnicity1 {
+  color: darkblue;
+  position: absolute;
+  left: 690px;
+  top: 485px;
+}
+.form_pat_ethnicity2 {
+  color: darkblue;
+  position: absolute;
+  left: 690px;
+  top: 502px;
+}
+
+.form_pat_id {
+  color: darkblue;
+  position: absolute;
+  left: 210px;
+  top: 530px;
+}
+
+.form_ins_id {
+  color: darkblue;
+  position: absolute;
+  left: 200px;
+  top: 593px;
+}
+.form_ins_company {
+  color: darkblue;
+  position: absolute;
+  left: 550px;
+  top: 593px;
+}
+.form_ins_group {
+  color: darkblue;
+  position: absolute;
+  left: 200px;
+  top: 623px;
+}
+.form_ins_ssn {
+  color: darkblue;
+  position: absolute;
+  left: 550px;
+  top: 623px;
+}
+.form_ins_lname {
+  color: darkblue;
+  position: absolute;
+  left: 200px;
+  top: 653px;
+}
+.form_ins_fname {
+  color: darkblue;
+  position: absolute;
+  left: 550px;
+  top: 653px;
+}
+.form_ins_ebd {
+  color: darkblue;
+  position: absolute;
+  left: 200px;
+  top: 680px;
+}
+.form_ins_eed {
+  color: darkblue;
+  position: absolute;
+  left: 550px;
+  top: 680px;
+}
+
+.form_test_date {
+  color: darkblue;
+  position: absolute;
+  left: 15px;
+  top: 750px;
+}
+.form_test_time {
+  color: darkblue;
+  position: absolute;
+  left: 190px;
+  top: 750px;
+}
+.form_test_onset {
+  color: darkblue;
+  position: absolute;
+  left: 450px;
+  top: 750px;
+}
+
+.form_test_type {
+  color: darkblue;
+  position: absolute;
+  left: 177px;
+  top: 915px;
+}

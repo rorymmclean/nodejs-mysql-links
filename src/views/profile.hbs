@@ -3,13 +3,14 @@
         <div class="col-md-4 mx-auto">
             <div class="card text-center">
                 <div class="card-body">
-                    <h3>Welcome {{user.lname}}</h3>
                     {{#ifCond user.lname 'guest'}}
-                    <a href="/links" class="btn btn-primary m-4">
+                    <h3>Welcome to the COVID-19 Testing Center</h3>
+                    <a href="/links/addpatient" class="btn btn-primary m-4">
                         Add Patient    
                     </a>
                     {{else}}
-                    <a href="/links" class="btn btn-primary m-4">
+                    <h3>Welcome {{user.lname}}</h3>
+                    <a href="/links/testpatient" class="btn btn-primary m-4">
                         Test Patients    
                     </a>
                     {{/ifCond}}

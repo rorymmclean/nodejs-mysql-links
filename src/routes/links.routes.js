@@ -9,7 +9,7 @@ const { renderAddLink, addLink, renderLinks, deleteLink, editLink, renderEditLin
 router.use(isLoggedIn);
 
 // Routes
-router.get('/add', renderAddLink);
+router.get('/addpatient', renderAddLink);
 router.post('/add', addLink);
 router.get('/', isLoggedIn, renderLinks);
 router.get('/delete/:id', deleteLink);

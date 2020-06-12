@@ -1,0 +1,13 @@
+@page {
+    margin:.1in;
+    padding:0;
+    }
+    
+@media print {
+    html, body {
+    width:auto;
+    height:auto;
+    margin:.1in;
+    padding:0;
+    }
+    
