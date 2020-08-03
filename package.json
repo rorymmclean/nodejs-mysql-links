@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon src/index.js",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +27,7 @@
     "timeago.js": "^4.0.1"
   },
   "devDependencies": {
+    "jest": "^26.2.2",
     "nodemon": "^2.0.4",
     "npm-check-updates": "^7.0.2"
   }
