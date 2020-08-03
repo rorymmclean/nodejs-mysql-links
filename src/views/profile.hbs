@@ -17,6 +17,10 @@
                 </div>
             </div>
         </div>
-
+        {{#ifCond user.lname 'guest'}}
+        ;nbspc
+        {{else}}
+        {{>patients}}
+        {{/ifCond}}
     </div>
 </div>
