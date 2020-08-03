@@ -11,6 +11,5 @@ test('Null Cases', () => {
 });
 
 test('String Cases', () => {
-  //expect(sum('A', 2)).toMatch('A2');
   expect(sum('A', 2)).toThrow('Does not support strings');
 });  
