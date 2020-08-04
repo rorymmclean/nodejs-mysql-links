@@ -32,6 +32,13 @@ services:
       OE_PASS: pass
     depends_on:
     - mysql
+  demo:
+    restart: always
+    image: rorymcleanaderas/demo:compose
+    ports:
+    - 4000:4000
+    depends_on:
+    - mysql
   phpmyadmin:
     restart: always
     image: phpmyadmin/phpmyadmin
