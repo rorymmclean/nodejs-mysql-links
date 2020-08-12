@@ -3,8 +3,17 @@
 # MYSQL_USER, MYSQL_PASS, OE_USER, MYSQL_PASS are optional for openemr and
 #   if not provided, then default to openemr, openemr, admin, and pass respectively.
 version: '3.1'
+
+networks:
+  covidnet:
+    driver: bridge
+
 services:
   mysql:
+    networks:
+      covidnet:
+        aliases:
+          - mysql
     restart: always
     image: mariadb:10.4
     command: ['mysqld','--character-set-server=utf8']
@@ -14,7 +23,12 @@ services:
       MYSQL_ROOT_PASSWORD: root
     ports:
     - 3306:3306
+
   openemr:
+    networks:
+      covidnet:
+        aliases:
+          - openemr
     restart: always
     image: openemr/openemr:5.0.2
     ports:
@@ -32,20 +46,19 @@ services:
       OE_PASS: pass
     depends_on:
     - mysql
+
   demo:
+    networks:
+      covidnet:
+        aliases:
+          - demo
     restart: always
     image: rorymcleanaderas/demo:compose
     ports:
     - 4000:4000
     depends_on:
     - mysql
-  phpmyadmin:
-    restart: always
-    image: phpmyadmin/phpmyadmin
-    ports:
-    - 8310:80
-    environment:
-      PMA_HOSTS: mysql
+
 volumes:
   logvolume0153: {}
   sitevolume53: {}
