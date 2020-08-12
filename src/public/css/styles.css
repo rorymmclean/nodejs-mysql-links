@@ -13,6 +13,12 @@ font-family: 'Oswald', sans-serif;
 .navbar {
     background: black !important;
 }
+.navbar-r {
+    background: red !important;
+}
+.navbar-b {
+    background: blue !important;
+}
 
 .nav-link {
     color: #fff !important;
