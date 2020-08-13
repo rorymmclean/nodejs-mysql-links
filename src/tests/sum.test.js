@@ -13,3 +13,8 @@ test('Null Cases', () => {
 test('String Cases', () => {
   expect(sum('A', 2)).toThrow('Does not support strings');
 });  
+
+test('Multipication Normal Case: 1 * 2 = 2', () => {
+  expect(multi(1, 2)).toBe(2);
+});
+
